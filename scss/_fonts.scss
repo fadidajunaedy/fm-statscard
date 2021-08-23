@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@mixin inter() {
+    font-family: 'Inter', sans-serif;
+}
+
+@mixin Deca() {
+    font-family: 'Lexan Deca', sans-serif;
+}
