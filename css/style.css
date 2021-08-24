@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lexan Deca', sans-serif;
 }
 
 section {
@@ -34,25 +34,62 @@ section .card {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "left right";
   background-color: #1b1938;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 section .card .left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: left;
-  width: 50%;
+  padding: 15%;
+  padding-right: 20%;
 }
 
 section .card .left h2 {
-  font-size: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
   font-weight: 700;
   color: white;
+  margin-bottom: 10%;
+}
+
+section .card .left h2 span {
+  color: #aa5cdb;
 }
 
 section .card .left p {
   font-size: 15px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 20%;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+section .card .left .detail-sum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+section .card .left .detail-sum .sum h3 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 5%;
+}
+
+section .card .left .detail-sum .sum span {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
 }
 
 section .card .right {

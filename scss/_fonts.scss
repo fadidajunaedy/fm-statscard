@@ -5,6 +5,14 @@
     font-family: 'Inter', sans-serif;
 }
 
-@mixin Deca() {
+@mixin inter2() {
+    font-family: 'Inter';
+}
+
+@mixin deca() {
     font-family: 'Lexan Deca', sans-serif;
+}
+
+@mixin deca2() {
+    font-family: 'Lexan Deca';
 }

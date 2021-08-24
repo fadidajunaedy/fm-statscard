@@ -8,7 +8,8 @@
 }
 
 body {
-    @include inter();
+    // @include inter();
+    @include deca();
 }
 
 section {
@@ -25,19 +26,56 @@ section {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "left right";
         background-color: $darkDesaturated;
+        border-radius: 12px;
+        overflow: hidden;
+
         .left {
             grid-area: left;
-            width: 50%;
+            padding: 15%;
+            padding-right: 20%;
+            // display: flex;
+            // justify-content: center;
+            // flex-direction: column;
             h2 {
-                font-size: 30px;
+                @include inter();
+                font-size: 32px;
                 font-weight: 700;
                 color: $white;
+                margin-bottom: 10%;
+
+                span {
+                    color: $softViolet;
+                }
             }
 
             p {
                 font-size: 15px;
                 font-weight: 400;
                 color: $transWhite1;
+                margin-bottom: 20%;
+                letter-spacing: 1px;
+                line-height: 24px;
+            }
+
+            .detail-sum {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @include inter();
+
+                .sum {
+                    h3 {
+                        font-size: 25px;
+                        color: $white;
+                        margin-bottom: 5%;
+                    }
+                    span {
+                        // @include deca2();
+                        font-size: 15px;
+                        color: $transpWhite2;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
 
@@ -55,4 +93,9 @@ section {
             }
         }
     }
+}
+
+// ========== MOBILE ==========
+@media screen and (max-widht: 567px){
+    
 }
