@@ -107,4 +107,119 @@ section .card .right .accent {
   width: 100%;
   background-color: rgba(170, 92, 219, 0.5);
 }
+
+@media screen and (max-width: 567px) {
+  section {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #090b1a;
+    padding: 15% 5%;
+  }
+  section .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 30vh auto;
+        grid-template-rows: 30vh auto;
+        grid-template-areas: "right" "left";
+    background-color: #1b1938;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  section .card .left {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15% 10%;
+  }
+  section .card .left h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  section .card .left h2 span {
+    color: #aa5cdb;
+  }
+  section .card .left p {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    margin-bottom: 15%;
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+  section .card .left .detail-sum {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Inter', sans-serif;
+  }
+  section .card .left .detail-sum .sum {
+    margin-bottom: 20%;
+  }
+  section .card .left .detail-sum .sum h3 {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+  }
+  section .card .left .detail-sum .sum span {
+    font-size: 15px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    margin: 10% 0px;
+  }
+  section .card .right {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: right;
+    background-image: url("/images/image-header-desktop.jpg");
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+  }
+  section .card .right .accent {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(170, 92, 219, 0.5);
+  }
+}
 /*# sourceMappingURL=style.css.map */

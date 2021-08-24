@@ -96,6 +96,98 @@ section {
 }
 
 // ========== MOBILE ==========
-@media screen and (max-widht: 567px){
+@media screen and (max-width: 567px){
+    section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $veryDarkBlue;
+        padding: 15% 5%;
     
+        .card {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 30vh auto;
+            grid-template-areas: 
+            "right"
+            "left";
+            background-color: $darkDesaturated;
+            border-radius: 12px;
+            overflow: hidden;
+    
+            .left {
+                grid-area: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 15% 10%;
+
+                h2 {
+                    @include inter();
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: $white;
+                    text-align: center;
+                    margin-bottom: 10%;
+    
+                    span {
+                        color: $softViolet;
+                    }
+                }
+    
+                p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: $transWhite1;
+                    text-align: center;
+                    margin-bottom: 15%;
+                    letter-spacing: 1px;
+                    line-height: 24px;
+                }
+    
+                .detail-sum {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    @include inter();
+    
+                    .sum {
+                        margin-bottom: 20%;
+                        h3 {
+                            font-size: 25px;
+                            text-align: center;
+                            color: $white;
+                        }
+                        span {
+                            // @include deca2();
+                            font-size: 15px;
+                            text-align: center;
+                            color: $transpWhite2;
+                            text-transform: uppercase;
+                            margin: 10% 0px;
+                        }
+                    }
+                }
+            }
+    
+            .right {
+                grid-area: right;
+                background-image: url('/images/image-header-desktop.jpg');
+                opacity: 1;
+                background-size: cover;
+                background-position: center;
+                height: 30vh;
+    
+                .accent {
+                    height: 100%;
+                    width: 100%;
+                    background-color: $softViolet2;
+                }
+            }
+        }
+    }
 }
